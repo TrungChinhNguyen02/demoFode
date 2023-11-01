@@ -1,3 +1,3 @@
 package com.example.demofode.Model
-data class Data(val token: String) {
+data class Data( val token: String) {
 }

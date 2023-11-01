@@ -86,7 +86,15 @@
         <item name="android:textSize">30sp</item>
         <item name="android:textColor">#2F2F2F</item>
     </style>
+    <style name="text_36_2f2f2f">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#2F2F2F</item>
+    </style>
     <style name="text_12_B9B9B9">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#9B9B9B</item>
+    </style>
+    <style name="text_14_B9B9B9">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">#9B9B9B</item>
     </style>
@@ -98,5 +106,8 @@
         <item name="android:textSize">13sp</item>
         <item name="android:textColor">#9C9C9C</item>
     </style>
-
+    <style name="text_18_9c9c9c">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#9C9C9C</item>
+    </style>
 </resources>

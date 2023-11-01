@@ -5,18 +5,36 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<<<<<<< HEAD
+=======
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+>>>>>>> f2c9fe9 (Initial commit)
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
+<<<<<<< HEAD
+=======
+        android:usesCleartextTraffic="true"
+>>>>>>> f2c9fe9 (Initial commit)
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DemoFode"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
+=======
+            android:name=".activity_food"
+            android:exported="false" />
+        <activity
+            android:name=".Clasicoo_activity"
+            android:exported="false" />
+        <activity
+>>>>>>> f2c9fe9 (Initial commit)
             android:name=".main_food"
             android:exported="false" />
         <activity

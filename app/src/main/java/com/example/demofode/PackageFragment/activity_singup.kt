@@ -1,14 +1,14 @@
-package com.example.demofode
+package com.example.demofode.PackageFragment
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import androidx.core.content.ContentProviderCompat.requireContext
 import com.example.demofode.API.Api_Login
 import com.example.demofode.Model.Register_Account
 import com.example.demofode.Model.register
+import com.example.demofode.activity_login
 import com.example.demofode.databinding.ActivitySingupBinding
 import retrofit2.Call
 import retrofit2.Callback
@@ -31,14 +31,13 @@ class activity_singup : AppCompatActivity() {
                 override fun onResponse(call: Call<register>, response: Response<register>) {
                     if (response.isSuccessful){
                         Toast.makeText(this@activity_singup, "Đăng kí thành công", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this@activity_singup,activity_login::class.java)
+                        val intent = Intent(this@activity_singup, activity_login::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this@activity_singup, "thất bại", Toast.LENGTH_SHORT).show()
                         Log.d("checkapi", "onResponse: ${response}")
                     }
                 }
-
                 override fun onFailure(call: Call<register>, t: Throwable) {
                     Toast.makeText(this@activity_singup, "Đã xảy ra lỗi", Toast.LENGTH_SHORT).show()
                 }

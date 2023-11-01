@@ -3,6 +3,7 @@ package com.example.demofode.AdapterModel
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.demofode.frag_campai
 import com.example.demofode.frag_onboarding2
 import com.example.demofode.frag_onbroading3
 import com.example.demofode.fragment_Food
