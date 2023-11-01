@@ -44,5 +44,7 @@
     <string name="my_address">Địa Chỉ Giao Hàng Của Bạn</string>
     <string name="address_deli">Hà Nội, Việt Nam</string>
 
+    <string name="clasico">Classico</string>
+    <string name="mixed">.....</string>
 
 </resources>

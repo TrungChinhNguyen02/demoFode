@@ -12,11 +12,5 @@ class myProfile: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = MainMyprofileBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.btnSave.setOnClickListener{
-            val intent = Intent(this@myProfile,main_menu::class.java)
-            startActivity(intent)
-        }
-    }
-    fun getdata(){
     }
 }

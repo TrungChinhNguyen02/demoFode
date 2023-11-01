@@ -1,15 +1,11 @@
 package com.example.demofode.AdapterModel
 
-import android.view.View
-import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.demofode.R
-import com.example.demofode.frag_onboarding1
-import com.example.demofode.frag_onboarding2
-import com.example.demofode.frag_onbroading3
-import com.example.demofode.fragment_special
+import com.example.demofode.PackageFragment.frag_onboarding1
+import com.example.demofode.PackageFragment.frag_onboarding2
+import com.example.demofode.PackageFragment.frag_onbroading3
 
 class ViewPagerAdapter(fragmentActivity: FragmentActivity) :
     FragmentStateAdapter(fragmentActivity) {

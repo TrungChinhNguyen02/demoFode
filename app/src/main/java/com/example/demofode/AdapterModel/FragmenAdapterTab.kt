@@ -3,13 +3,11 @@ package com.example.demofode.AdapterModel
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.demofode.frag_onboarding2
-import com.example.demofode.frag_onbroading3
-import com.example.demofode.fragment_Food
-import com.example.demofode.fragment_allmenu
-import com.example.demofode.fragment_pizza
-import com.example.demofode.fragment_special
-import com.example.demofode.fragment_top
+import com.example.demofode.PackageFragment.fragment_Food
+import com.example.demofode.PackageFragment.fragment_allmenu
+import com.example.demofode.PackageFragment.fragment_pizza
+import com.example.demofode.PackageFragment.fragment_special
+import com.example.demofode.PackageFragment.fragment_top
 
 class FragmenAdapterTab(fragmentActivity: FragmentActivity) :
     FragmentStateAdapter(fragmentActivity) {

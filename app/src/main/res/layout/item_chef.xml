@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="208dp"
-    android:layout_height="324dp"
+    android:layout_height="334dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:backgroundTint="@color/fode_FAFBFD">
+    android:backgroundTint="@color/fode_FAFBFD"
+    android:id="@+id/id_item_chef">
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/icon_kcal"
         android:layout_marginLeft="27dp"
-        android:layout_marginTop="22dp"/>
+        android:layout_marginTop="12dp"/>
     <TextView
         android:id="@+id/calor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="45dp"
         android:text="@string/calories"
         style="@style/text_12_B9B9B9"/>
@@ -22,17 +23,16 @@
         android:id="@+id/tymIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="172dp"
         android:layout_marginRight="21dp"
-        android:background="@drawable/icon_tym"
-        android:backgroundTint="@color/fode_red"/>
+        android:background="@drawable/icon_tym" />
     <androidx.cardview.widget.CardView
         android:layout_width="149dp"
         android:layout_height="149dp"
         app:cardCornerRadius="80dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="50dp">
         <ImageView
             android:id="@+id/img_mon"
             android:layout_width="wrap_content"
@@ -46,7 +46,7 @@
         android:text="Pizza"
         android:textSize="18dp"
         android:textColor="@color/fode_272727"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="210dp"
         android:layout_marginLeft="30dp"/>
     <TextView
         android:id="@+id/thongtin"
@@ -55,7 +55,7 @@
         android:text="Mixed Pizza with cheese"
         android:textSize="12dp"
         android:textColor="@color/fode_B0B0B0"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="230dp"
         android:layout_marginLeft="30dp"/>
     <TextView
         android:layout_width="wrap_content"
@@ -63,7 +63,7 @@
         android:text="$7,99"
         android:textSize="18dp"
         android:textColor="@color/fode_272727"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="250dp"
         android:layout_marginLeft="30dp"
         android:id="@+id/giamon"/>
 </RelativeLayout>
