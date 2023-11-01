@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--  Button Style -->
+        <style name="fode.Button"
+            parent="@style/Widget.MaterialComponents.Button.UnelevatedButton">
+            <item name="cornerRadius">59dp</item>
+            <item name="android:layout_height">74dp</item>
+            <item name="android:layout_width">348dp</item>
+            <item name="backgroundTint">@color/fode_272727</item>
+            <item name="android:textColor">@color/white</item>
+            <item name="android:textSize">23dp</item>
+        </style>
+        <style name="button_w165dp">
+            <item name="cornerRadius">59dp</item>
+            <item name="android:layout_height">74dp</item>
+            <item name="android:layout_width">348dp</item>
+            <item name="android:textColor">@color/white</item>
+            <item name="android:textSize">23dp</item>
+            <item name="android:radius">2dp</item>
+        </style>
+        <style name="mainmenulist">
+            <item name="android:textSize">18sp</item>
+            <item name="android:letterSpacing">0</item>
+            <item name="android:textColor">#B0B0B0</item>
+        </style>
+        <style name="btn_gg">
+            <item name="android:layout_width">165.5dp</item>
+            <item name="android:layout_height">66.5dp</item>
+            <item name="backgroundTint">#FF4E3F</item>
+            <item name="android:textColor">@color/white</item>
+        </style>
+        <style name="btn_fb">
+            <item name="android:layout_width">165.5dp</item>
+            <item name="android:layout_height">66.5dp</item>
+            <item name="backgroundTint">#5C75FB</item>
+            <item name="android:textColor">@color/white</item>
+        </style>
+        <style name="fode.edittext"
+            parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <item name="android:layout_width">349dp</item>
+            <item name="android:layout_height">70dp</item>
+            <item name="backgroundTint">@color/fode_FAFBFD</item>
+            <item name="android:textColorHint">@color/fode_B0B0B0</item>
+            <item name="cornerRadius">59dp</item>
+            <item name="android:layout_gravity">center_horizontal</item>
+        </style>
+
+        <style name="fode.Button1"
+            parent="@style/Widget.MaterialComponents.Button.UnelevatedButton">
+            <item name="cornerRadius">59dp</item>
+            <item name="android:layout_height">74dp</item>
+            <item name="android:layout_width">398dp</item>
+            <item name="backgroundTint">@color/fode_272727</item>
+            <item name="android:textColor">@color/white</item>
+            <item name="android:textSize">23dp</item>
+        </style>
+
+        <style name="text_24_272727">
+            <item name="android:textSize">24sp</item>
+            <item name="android:textColor">#272727</item>
+        </style>
+        <style name="text_18_272727">
+            <item name="android:textSize">24sp</item>
+            <item name="android:textColor">#272727</item>
+        </style>
+        <style name="text_24_AFAFAF">
+            <item name="android:textSize">24sp</item>
+            <item name="android:textColor">#AFAFAF</item>
+        </style>
+        <style name="text_24_232323">
+            <item name="android:textSize">24sp</item>
+            <item name="android:letterSpacing">0.01</item>
+            <item name="android:textColor">#232323</item>
+        </style>
+        <style name="text_14_B0B0B0">
+            <item name="android:textSize">14dp</item>
+            <item name="android:letterSpacing">0</item>
+            <item name="android:textColor">#B0B0B0</item>
+        </style>
+    <style name="text_18">
+        <item name="android:textSize">18dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="text_30_2f2f2f">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#2F2F2F</item>
+    </style>
+    <style name="text_12_B9B9B9">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#9B9B9B</item>
+    </style>
+    <style name="text_20_2f2f2f">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#2F2F2F</item>
+    </style>
+    <style name="text_13_9c9c9c">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#9C9C9C</item>
+    </style>
+
+</resources>

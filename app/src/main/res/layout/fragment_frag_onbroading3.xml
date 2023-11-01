@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    tools:context=".frag_onbroading3"
+    android:orientation="vertical"
+    android:id="@+id/frag_onbroading3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dau_bep"
+        style="@style/text_24_272727"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/texttitle"
+        style="@style/text_24_AFAFAF"
+        android:gravity="center"/>
+    <com.example.demofode.Fode_System_buttom
+        android:id="@+id/next_fragment3"
+        android:layout_width="306dp"
+        android:layout_height="70dp"
+        android:text="@string/get_stated"
+        android:layout_gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fode_272727">#272727</color>
+    <color name="fode_F8D57E">#F8D57E</color>
+    <color name="fode_B0B0B0">#B0B0B0</color>
+    <color name="fode_FAFBFD">#FAFBFD</color>
+    <color name="fode_red">#FF0404</color>
+</resources>

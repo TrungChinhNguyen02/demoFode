@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/food_bg"
+    android:backgroundTint="@color/fode_F8D57E"
+    tools:context=".myProfile">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/vector_menu"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_profile"
+                style="@style/text_24_232323"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_profile"
+                style="@style/text_14_B0B0B0"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                style="@style/text_18"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:drawableRight="@drawable/add_surname"
+                android:text="@string/name_Surname" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_sur"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                style="@style/text_18"
+                android:drawableRight="@drawable/add_surname"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/email_Sur"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                style="@style/text_18"
+                android:drawableRight="@drawable/add_surname"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/address_Sur"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                style="@style/text_18"
+                android:drawableRight="@drawable/add_surname"/>
+            <com.example.demofode.Fode_System_buttom
+                android:id="@+id/btnSave"
+                android:layout_width="348dp"
+                android:layout_height="74dp"
+                android:text="@string/save"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

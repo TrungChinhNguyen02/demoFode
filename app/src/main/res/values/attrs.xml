@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="fode_ButtonStyle" format="reference"/>
+    <attr name="fode_TextField" format="reference"/>
+
+</resources>
