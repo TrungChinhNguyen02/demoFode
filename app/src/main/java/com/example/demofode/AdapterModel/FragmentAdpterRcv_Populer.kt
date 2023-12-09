@@ -7,10 +7,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.demofode.Model.Product
 import com.example.demofode.R
+import com.example.demofode.fragment_special
 
 
 class FragmentAdpterRcv_Populer(private val ProductList: List<Product>) : RecyclerView.Adapter<FragmentAdpterRcv_Populer.MyViewHolder>(){

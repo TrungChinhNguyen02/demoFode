@@ -38,7 +38,7 @@ class adapterFragCampai(private val ProductList: List<Products>): RecyclerView.A
     override fun getItemCount(): Int {
         return ProductList.size
     }
-    override fun onBindViewHolder(holder:ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: adapterFragCampai.ViewHolder, position: Int) {
        holder.bind(ProductList[position])
     }
 
