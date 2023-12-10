@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PackageFragment.activity_singup">
+    tools:context=".activity_singup">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

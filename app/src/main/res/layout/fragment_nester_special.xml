@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment_nester_special">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+
+    <!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_marginTop="350dp">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:text="Thông Tin Của Bạn"-->
+<!--            style="@style/text_20_2f2f2f"/>-->
+<!--        <ImageButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/icon_map"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_marginTop="70dp"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/my_address"-->
+<!--            style="@style/text_13_9c9c9c"-->
+<!--            android:layout_marginLeft="140dp"-->
+<!--            android:layout_marginTop="60dp" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/address_deli"-->
+<!--            style="@style/text_18_272727"-->
+<!--            android:layout_marginLeft="130dp"-->
+<!--            android:layout_marginTop="90dp"/>-->
+<!--    </RelativeLayout>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/nextmain"-->
+<!--        android:layout_width="185dp"-->
+<!--        android:layout_height="76dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="400dp"-->
+<!--        android:drawableEnd="@drawable/icon_map"-->
+<!--        android:backgroundTint="@color/fode_272727"-->
+<!--        android:text="2item"-->
+<!--        style="@style/text_14_B0B0B0"/>-->
+</RelativeLayout>

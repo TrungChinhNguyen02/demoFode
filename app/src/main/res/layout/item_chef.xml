@@ -19,14 +19,14 @@
         android:layout_marginLeft="45dp"
         android:text="@string/calories"
         style="@style/text_12_B9B9B9"/>
-    <ImageView
+    <ImageButton
         android:id="@+id/tymIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="172dp"
         android:layout_marginRight="21dp"
-        android:background="@drawable/icon_tym" />
+        android:background="@drawable/icon_tym"/>
     <androidx.cardview.widget.CardView
         android:layout_width="149dp"
         android:layout_height="149dp"

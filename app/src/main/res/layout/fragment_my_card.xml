@@ -5,10 +5,41 @@
     android:layout_height="match_parent"
     tools:context=".fragment_myCard">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MyCard"
+        android:layout_marginLeft="30dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
+        android:layout_marginTop="50dp"
+        android:id="@+id/rcvMyCard"
+        tools:listitem="@layout/item_mycard"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="200dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalprice"
+        style="@style/text_14_B9B9B9"
+        android:layout_marginTop="580dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalprice"
+        style="@style/text_30_2f2f2f"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="40dp"/>
+    <ImageButton
+        android:id="@+id/buynow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buy_now"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="190dp"/>
 </FrameLayout>

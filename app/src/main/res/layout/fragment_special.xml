@@ -3,12 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PackageFragment.fragment_special">
-
+    tools:context=".PackageFragment.fragment_special"
+    android:id="@+id/frag_special">
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         tools:listitem="@layout/item_chef"
-        android:layout_margin="20dp"
-        android:id="@+id/recycleviewtab"/>
+        android:id="@+id/recycleviewSpecial"/>
 </FrameLayout>

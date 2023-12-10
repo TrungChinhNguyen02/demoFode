@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">demoFode</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Tìm Kiếm</string>
     <string name="thuc_an_ngon">Thức Ăn Ngon</string>
     <string name="giao_hang_nhanh">Giao Hàng Nhanh</string>
     <string name="dau_bep">Đầu Bếp Được Chứng Nhận</string>
@@ -43,8 +43,16 @@
     <string name="calories">78 Calor</string>
     <string name="my_address">Địa Chỉ Giao Hàng Của Bạn</string>
     <string name="address_deli">Hà Nội, Việt Nam</string>
-
+    <string name="food_filter">Bộ Lọc Thực Phẩm</string>
     <string name="clasico">Classico</string>
     <string name="mixed">.....</string>
+    <string name="clear">Xoá Hết</string>
+    <string name="location">Địa Điểm</string>
+    <string name="filterBy">Bộ Lọc Theo</string>
+    <string name="price">Giá</string>
+    <string name="apply">Áp Dụng</string>
+    <string name="MyCard">Thẻ \nCủa Bạn</string>
+    <string name="totalprice">Tổng Tiền</string>
 
+    <string name="hello_blank_fragment"> hello</string>
 </resources>

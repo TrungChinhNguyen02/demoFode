@@ -1,6 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="345dp"
+    android:layout_height="127dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#FAFBFD">
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:background="@drawable/img_mycard"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/title_mycard"
+        style="@style/text_36_2f2f2f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clasico"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+            android:id="@+id/description_mycard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clasico"
+            android:layout_centerHorizontal="true"
+             android:layout_marginTop="45dp"
+            style="@style/text_18_9c9c9c"
+        android:layout_marginLeft="120dp"/>
+        <TextView
+            android:id="@+id/calor_mycard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 7,99"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            style="@style/text_14_B9B9B9"
+            android:layout_marginLeft="120dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="250dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="100dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/text_sum_classico"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg_size_classico"
+            android:text="1"
+            android:gravity="center"
+            android:textSize="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="310dp"
+        app:cardCornerRadius="30dp">
+        <TextView
+            android:id="@+id/add_mycard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FAFBFD"
+            android:text="+"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="310dp"
+        app:cardCornerRadius="30dp">
+        <TextView
+            android:id="@+id/difference_classico"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FAFBFD"
+            android:text="-"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -3,12 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment_home_food">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food_for_you"
+        style="@style/text_30_2f2f2f"
+        android:layout_marginLeft="27dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_food"
+        app:tabIndicatorColor="@color/fode_F8D57E"
+        android:layout_marginTop="40dp"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/page2_food"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="90dp">
+    </androidx.viewpager2.widget.ViewPager2>
 
 </FrameLayout>

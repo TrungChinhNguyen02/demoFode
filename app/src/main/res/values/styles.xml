@@ -63,6 +63,10 @@
             <item name="android:textSize">24sp</item>
             <item name="android:textColor">#272727</item>
         </style>
+    <style name="text_18_b0b0b0">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#b0b0b0</item>
+    </style>
         <style name="text_24_AFAFAF">
             <item name="android:textSize">24sp</item>
             <item name="android:textColor">#AFAFAF</item>
@@ -98,6 +102,10 @@
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">#9B9B9B</item>
     </style>
+    <style name="text_18_9c9c9c">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#9C9C9C</item>
+    </style>
     <style name="text_20_2f2f2f">
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">#2F2F2F</item>
@@ -106,8 +114,12 @@
         <item name="android:textSize">13sp</item>
         <item name="android:textColor">#9C9C9C</item>
     </style>
-    <style name="text_18_9c9c9c">
-        <item name="android:textSize">13sp</item>
+    <style name="text_14_9c9c9c">
+        <item name="android:textSize">14sp</item>
         <item name="android:textColor">#9C9C9C</item>
+    </style>
+    <style name="text_30_353535">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#353535</item>
     </style>
 </resources>

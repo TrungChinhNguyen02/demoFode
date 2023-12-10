@@ -47,15 +47,15 @@
                     android:background="@drawable/vector_textfield"/>
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
-                app:endIconMode="custom"
                 android:id="@+id/ed_login_pass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="@string/edittext_hint_pass"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="5dp"
                 style="@style/fode.edittext"
                 android:layout_marginTop="20dp"
-                app:endIconDrawable="@drawable/checkpass">
+                app:passwordToggleEnabled="true"
+                app:passwordToggleDrawable="@drawable/password_toggle">
                 <com.google.android.material.textfield.TextInputEditText
                     android:inputType="textPassword"
                     android:layout_width="match_parent"
@@ -63,6 +63,7 @@
                     android:id="@+id/edt_text_pass"
                     android:background="@drawable/vector_textfield" />
             </com.google.android.material.textfield.TextInputLayout>
+
            <com.example.demofode.Fode_System_buttom
                android:id="@+id/btn_login"
                android:layout_width="348dp"

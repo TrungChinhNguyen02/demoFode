@@ -1,54 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_food">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/icon3"
-        android:layout_margin="44dp"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/iconseach"
-        android:layout_marginTop="38dp"
-        android:layout_marginLeft="300dp"/>
-    <TextView
-        android:id="@+id/txtfood"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/gilroy_thin"
-        android:text="@string/food"
-        style="@style/text_30_2f2f2f"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="27dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/food_for_you"
-        style="@style/text_30_2f2f2f"
-        android:layout_marginTop="140dp"
-        android:layout_marginLeft="27dp"/>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/add_fragment"
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="200dp"/>
-    <androidx.cardview.widget.CardView
-        android:layout_width="180dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="600dp"
-        android:layout_centerHorizontal="true">
-        <Button
-            android:id="@+id/next"
-            android:layout_width="185dp"
-            android:layout_height="76dp"
-            android:drawableEnd="@drawable/icon_map"
-            android:backgroundTint="@color/fode_272727"
-            android:text="2item"
-            style="@style/text_14_B0B0B0"/>
-    </androidx.cardview.widget.CardView>
-</RelativeLayout>
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="31dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="600dp"
+            android:text="Tổng Tiền: "
+            android:textSize="25dp"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tongtien"
+           android:layout_marginTop="600dp"
+           android:layout_marginLeft="150dp"
+           android:text="0"
+           android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/foodname_classico"
+            style="@style/text_36_2f2f2f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/clasico" />
+
+        <TextView
+            android:id="@+id/description_clasicoo"
+            style="@style/text_18_9c9c9c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="470dp"
+            android:text="@string/clasico" />
+
+        <TextView
+            android:id="@+id/calor_clasicoo"
+            style="@style/text_14_B9B9B9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:drawableStart="@drawable/icon_kcal"
+            android:text="@string/clasico" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            app:cardCornerRadius="150dp">
+
+            <ImageView
+                android:id="@+id/img_chef_classico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_pizza" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="280dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:id="@+id/text_sum"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_size_classico"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="30dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="280dp"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#FAFBFD"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="320dp"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:id="@+id/difference"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#FAFBFD"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            style="@style/text_18_9c9c9c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="480dp"
+            android:text="Giá" />
+
+        <TextView
+            android:id="@+id/price_classico"
+            style="@style/text_36_2f2f2f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="500dp"
+            android:text="99" />
+
+        <ImageButton
+            android:id="@+id/buynow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="590dp"
+            android:background="@drawable/icon_buy_btn" />
+
+        <LinearLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sizes"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="80dp"
+                android:backgroundTint="@color/white"
+                android:text="S"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sizem"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:backgroundTint="@color/white"
+                android:text="M"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sizel"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="80dp"
+                android:backgroundTint="@color/white"
+                android:text="L"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        >-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/size_s"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/bg_size_classico"-->
+    <!--            android:backgroundTint="@color/white"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="S"-->
+    <!--            android:textSize="30dp" />-->
+    <!--            android:layout_marginTop="400dp"-->
+    <!--            android:layout_marginLeft="300dp"-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/size_m"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:layout_marginRight="20dp"-->
+    <!--            android:background="@drawable/bg_size_classico"-->
+    <!--            android:backgroundTint="@color/white"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="M"-->
+    <!--            android:textSize="30dp" />-->
+    <!--            android:layout_marginTop="400dp"-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/size_l"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/bg_size_classico"-->
+    <!--            android:backgroundTint="@color/white"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="L"-->
+    <!--            android:textSize="30dp" />-->
+    <!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

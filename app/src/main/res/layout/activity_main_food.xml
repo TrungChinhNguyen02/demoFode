@@ -5,18 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".main_food">
+
     <ImageView
+        android:id="@+id/filterby"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/icon3"
-        android:layout_margin="44dp"/>
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/icon3" />
     <ImageView
+        android:id="@+id/btnSeach"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/iconseach"
         android:layout_marginTop="38dp"
         android:layout_marginLeft="300dp"/>
     <TextView
+        android:id="@+id/thucan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/gilroy_thin"
@@ -24,69 +31,35 @@
         style="@style/text_30_2f2f2f"
         android:layout_marginTop="100dp"
         android:layout_marginLeft="27dp"/>
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="@string/food_for_you"
-       style="@style/text_30_2f2f2f"
-       android:layout_marginTop="140dp"
-       android:layout_marginLeft="27dp"/>
 
-    <com.google.android.material.tabs.TabLayout
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewId"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:id="@+id/tab_food"
-        app:tabIndicatorColor="@color/fode_F8D57E"/>
-    <androidx.viewpager2.widget.ViewPager2
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="250dp"
-        android:id="@+id/page2_food">
-    </androidx.viewpager2.widget.ViewPager2>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="550dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="30dp"
-            android:text="Thông Tin Của Bạn"
-            style="@style/text_20_2f2f2f"/>
+        android:layout_marginTop="530dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_buy"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="40dp"
+        android:id="@+id/cardview">
         <ImageButton
+            android:id="@+id/btnNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/icon_map"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="70dp"/>
-        <TextView
-            android:layout_width="wrap_content"
+            android:background="@drawable/icon_buy_btn"/>
+    </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/my_address"
-            style="@style/text_13_9c9c9c"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="60dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/address_deli"
-            style="@style/text_18_272727"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="80dp"/>
-    </RelativeLayout>
-    
-        <Button
-            android:id="@+id/nextmain"
-            android:layout_width="185dp"
-            android:layout_height="76dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="600dp"
-            android:drawableEnd="@drawable/icon_map"
-            android:backgroundTint="@color/fode_272727"
-            android:text="2item"
-            style="@style/text_14_B0B0B0"/>
-        
+            app:menu="@menu/menubar"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_menubar"
+            android:id="@+id/navigationBar"/>
 </RelativeLayout>

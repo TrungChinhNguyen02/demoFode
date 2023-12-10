@@ -26,7 +26,7 @@
         app:tabIndicatorColor="@color/fode_F8D57E" />
     <androidx.viewpager2.widget.ViewPager2
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="170dp"
         android:id="@+id/page2"/>
     <ImageButton
         android:id="@+id/btn_next_fragment"
