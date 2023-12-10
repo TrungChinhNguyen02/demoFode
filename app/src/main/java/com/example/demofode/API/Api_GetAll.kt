@@ -12,10 +12,11 @@ interface Api_GetAll {
     companion object{
 
         var retrofit = Retrofit.Builder()
-            .baseUrl("http://ec2-57-180-22-166.ap-northeast-1.compute.amazonaws.com/api/")
+            .baseUrl("http://ec2-13-114-125-145.ap-northeast-1.compute.amazonaws.com/api/")
             .addConverterFactory(GsonConverterFactory.create()).build()
         var apiGetall = retrofit.create(Api_GetAll::class.java)
     }
+
     @GET("product/get-all")
 fun getAllProducts(@Header("Authorization") token : String) : Call<ProductResponse>
 

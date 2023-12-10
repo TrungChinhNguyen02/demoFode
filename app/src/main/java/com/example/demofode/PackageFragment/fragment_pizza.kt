@@ -33,7 +33,7 @@ class fragment_pizza : Fragment() {
 
     private fun setupRecyclerView(productList: List<Product>) {
         mRecyclerView = view?.findViewById(R.id.recycleviewPizza)!!
-        adapterr = FragmentAdpterRcv_Populer(productList)
+        adapterr = FragmentAdpterRcv_Populer(productList,requireContext())
         mRecyclerView.layoutManager =
             LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         mRecyclerView.adapter = adapterr

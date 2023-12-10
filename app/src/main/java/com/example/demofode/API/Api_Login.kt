@@ -1,7 +1,5 @@
 package com.example.demofode.API
 
-import android.content.SharedPreferences
-import com.example.demofode.Model.AccountLogin
 import com.example.demofode.Model.Register_Account
 import com.example.demofode.Model.register
 import retrofit2.Call
@@ -17,7 +15,7 @@ interface Api_Login {
     companion object{
 
         var retrofit = Retrofit.Builder()
-            .baseUrl("http://ec2-57-180-22-166.ap-northeast-1.compute.amazonaws.com/api/")
+            .baseUrl("http://ec2-13-114-125-145.ap-northeast-1.compute.amazonaws.com/api/")
             .addConverterFactory(GsonConverterFactory.create()).build()
         var apilogin = retrofit.create(Api_Login::class.java)
     }
@@ -29,6 +27,4 @@ interface Api_Login {
 
     @POST("registration")
     fun Register(@Body registerAccount: Register_Account): Call<register>
-
 }
-//

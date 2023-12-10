@@ -1,4 +1,7 @@
 package com.example.demofode.API
 
-interface onClickButton {
+import android.view.View
+
+interface OnButtonClickListener {
+    fun onButtonClicked(view: View)
 }

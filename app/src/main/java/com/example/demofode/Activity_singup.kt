@@ -1,4 +1,4 @@
-package com.example.demofode.PackageFragment
+package com.example.demofode
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,7 +8,6 @@ import android.widget.Toast
 import com.example.demofode.API.Api_Login
 import com.example.demofode.Model.Register_Account
 import com.example.demofode.Model.register
-import com.example.demofode.activity_login
 import com.example.demofode.databinding.ActivitySingupBinding
 import retrofit2.Call
 import retrofit2.Callback

@@ -18,5 +18,4 @@ data class Product(
     val image_url: String,
     val created_at : String?,
     val updated_at : String?
-)    {
-}
+)

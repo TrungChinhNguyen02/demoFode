@@ -8,12 +8,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.demofode.API.Api_GetAll
 import com.example.demofode.AdapterModel.FragmentAdpterRcv_Populer
-import com.example.demofode.AdapterModel.ViewPagerAdapter
-import com.example.demofode.AdapterModel.adapterFragCampai
 import com.example.demofode.Model.Product
 import com.example.demofode.Model.ProductResponse
 import com.example.demofode.R
@@ -30,13 +27,13 @@ class frag_food_resulth : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view : View = inflater.inflate(R.layout.fragment_frag_food_resulth, container, false)
-
+        getDataProductAll()
         return  view    }
-    private fun setupRecyclerView(productList: List<Product>) {
+    private fun setupRecyclerView( productList: List<Product>) {
         mRecyclerView = view?.findViewById(R.id.food_resulth)!!
-        adapterr = FragmentAdpterRcv_Populer(productList)
+        adapterr = FragmentAdpterRcv_Populer(productList,requireContext())
         mRecyclerView.layoutManager =
-            LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            GridLayoutManager(context, 2)
         mRecyclerView.adapter = adapterr
     }
     private fun getDataProductAll(){
@@ -57,7 +54,6 @@ class frag_food_resulth : Fragment() {
                         setupRecyclerView(productList)
                     }
                 }
-
             }
             override fun onFailure(call: Call<ProductResponse>, t: Throwable) {
                 t.printStackTrace()

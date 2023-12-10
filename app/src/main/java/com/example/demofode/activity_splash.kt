@@ -22,9 +22,7 @@ class activity_splash : AppCompatActivity() {
         binding.page2.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         val tabLayout = binding.tabLayout
         tabLayout.tabMode = TabLayout.MODE_AUTO
-        TabLayoutMediator(
-            tabLayout, viewPager2
-        ) {
+        TabLayoutMediator(tabLayout, viewPager2) {
                 tab, position ->
         }.attach()
         val btnNextFragment = binding.btnNextFragment

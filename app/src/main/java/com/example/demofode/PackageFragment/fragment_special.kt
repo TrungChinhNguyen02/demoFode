@@ -1,7 +1,6 @@
 package com.example.demofode.PackageFragment
 
 import android.content.Context
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -15,7 +14,6 @@ import com.example.demofode.AdapterModel.FragmentAdpterRcv_Populer
 import com.example.demofode.Model.Product
 import com.example.demofode.Model.ProductResponse
 import com.example.demofode.R
-import com.example.demofode.databinding.FragmentSpecialBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -27,29 +25,27 @@ import retrofit2.Response
  * create an instance of this fragment.
  */
 class fragment_special : Fragment() {
-    lateinit var sharedPreferences: SharedPreferences
-
+//    lateinit var sharedPreferences: SharedPreferences
+//
     private lateinit var adapterr: FragmentAdpterRcv_Populer
     private lateinit var mRecyclerView : RecyclerView
 
 
 
-    lateinit var binding: FragmentSpecialBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
         val view =inflater.inflate(R.layout.fragment_special, container, false)
-        val relativeLayout : RecyclerView = view.findViewById(R.id.recycleviewtab)
+
 
         getDataProductAll()
-
         return view
     }
     private fun setupRecyclerView(productList: List<Product>) {
-        mRecyclerView = view?.findViewById(R.id.recycleviewtab)!!
-        adapterr = FragmentAdpterRcv_Populer(productList)
+        mRecyclerView = view?.findViewById(R.id.recycleviewSpecial)!!
+        adapterr = FragmentAdpterRcv_Populer(productList,requireContext())
         mRecyclerView.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
         mRecyclerView.adapter = adapterr
     }
